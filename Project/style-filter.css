@@ -1,0 +1,39 @@
+
+body {
+  margin-top: 20%;
+  text-align: center;
+}
+
+ul li > .dropone:hover .prizec {
+    display: block;
+  }
+.prizec a:hover {
+    background-color: lightgreen;
+  }
+.publication {
+    position: relative;
+    display: none;
+  }
+
+ul li > .droptwo:hover .publication {
+    display: block;
+  }
+.label {
+    background-color: lightpink;
+    color: black;
+  }
+
+.submission-end {
+    position: relative;
+    display: none;
+  }
+
+ul li > .dropthree:hover .submission-end {
+  display: block;
+}  
+ul li > .dropfour:hover .agency {
+  display: block;
+}
+.agency a:hover {
+  background-color: lightgreen;
+}
