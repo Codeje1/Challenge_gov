@@ -49,8 +49,13 @@
             <%# New code %>
 
             <div class="form-group">
-            <label class="col"><strong>Notes:</strong></label>
-            <div class="col ql-editor editor-text-submissions"><%= SharedView.render_safe_html(@submission.notes) %></div>
+            <form>
+              <label class="col" for="notes" style="text-align:center;"><strong>Notes:</strong></label> <br/>
+              <textarea id="notes" rows="4" cols="30" placeholder="Type notes here" wrap="hard" name="notes"></textarea>
+              <br/>
+              <br/>
+              <input type="submit">
+            </form>
             </div>
             
             <%# End of new code %>
