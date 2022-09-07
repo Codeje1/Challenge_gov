@@ -51,12 +51,14 @@
             <div class="form-group">
             <form>
               <label class="col" for="notes" style="text-align:center;"><strong>Notes:</strong></label> <br/>
-              <textarea id="notes" rows="4" cols="30" placeholder="Type notes here" wrap="hard" name="notes"></textarea>
+              <div class="col ql-editor editor-text-submissions"><%= SharedView.render_safe_html(@submission.notes) %></div>
+              <textarea class="col" id="notes" rows="4" cols="30" placeholder="Type notes here" wrap="hard" name="notes"></textarea>
               <br/>
               <br/>
               <input type="submit">
             </form>
             </div>
+            
             
             <%# End of new code %>
 
