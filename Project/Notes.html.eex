@@ -54,8 +54,8 @@
               <div class="col ql-editor editor-text-submissions"><%= SharedView.render_safe_html(@submission.notes) %></div>
               <textarea class="col" id="notes" rows="4" cols="30" placeholder="Type notes here" wrap="hard" name="notes"></textarea>
               <br/>
-              <br/>
-              <input type="submit">
+              <%# <br/>
+              <input type="submit"> %>
             </form>
             </div>
             
