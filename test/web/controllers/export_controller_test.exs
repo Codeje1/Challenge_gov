@@ -27,6 +27,17 @@ defmodule Web.ExportControllerTest do
       assert response_content_type(conn, :json) === "application/json"
     end
 
+    test "success: as notes", %{conn: conn} do
+      conn = prep_conn(conn)
+      %{current_user: user} = conn.assigns
+
+      challenge = ChallengeHelpers.create_challenge(%{user_id: user.id, status: "published"})
+
+      conn = get(conn, Routes.export_path(conn, :export_challenge, challenge.id, "notes"))
+
+      assert response_content_type(conn, :notes) === "text/textarea_opts"
+    end
+
     test "failure: invalid format", %{conn: conn} do
       conn = prep_conn(conn)
       %{current_user: user} = conn.assigns

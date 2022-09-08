@@ -59,7 +59,6 @@
             </form>
             </div>
             
-            
             <%# End of new code %>
 
             <%= if @submission.external_url do %>

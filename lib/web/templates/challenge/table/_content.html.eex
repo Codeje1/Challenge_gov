@@ -34,6 +34,7 @@
             <%= link "Download JSON", to: Routes.export_path(@conn, :export_challenge, challenge.id, "json"), target: "_blank", class: "btn btn-link" %>
             <hr/>
             <%= link "Download CSV", to: Routes.export_path(@conn, :export_challenge, challenge.id, "csv"), target: "_blank", class: "btn btn-link" %>
+            <%= link "Download Notes", to: Routes.export_path(@conn, :export_challenge, challenge.id, "notes"), target: "_blank", class: "btn btn-link" %>
             <hr/>
             <%= if not is_nil(challenge.gov_delivery_topic) do %>
               <%= link("Send Bulletin", to: Routes.challenge_bulletin_path(@conn, :new, challenge.id), class: "btn btn-link") %>
